@@ -21,7 +21,12 @@
 </header>
 <p>Per a començar la activitat escogirem un paquet per a comparar versions i escogim Nginx. Ara entrarem en la terminal.</p>
 <img src="Captura de pantalla de 2026-10-09 12-43-44.png"></img>
-<p>Una vegada dins de la terminal usarem la següent comanda per a veure les versions: <i>"apt-cache policy nginx"</i></p>
+<p>Una vegada dins de la terminal usarem la següent comanda per a veure les versions: <i>"apt-cache policy nginx"</i>. Aquesta comanda ens esta esta mostrant que no el tenim instal·lat, quina versió es instal·lara quan executem el <i>apt install</i>, també ens indica quines altres versions hi ha disponible i la prioritat, la qual es 500 de forma predeterminada aixi que escogira la més recent.</i></p>
 <img src="Captura de pantalla de 2026-10-09 12-39-13.png"></img>
+<p>Ara per a modificar la prioritat lo que farem sera fer servir la comanda <i>nano /etc/apt/preferences.d/nginx</i></p>
+<img src="sprint1/Captura de pantalla de 2026-10-09 12-05-00.png"></img>
+<p>Quan ja estim dins d'aquest document introduirem lo següent:</p>
+<img src="Captura de pantalla de 2026-10-09 12-34-21.png"></img>
+<p>Lo que hem escribit indica que el paquet es nginx, que estem modificant la verision 1.28.3-2ubuntu1 i que le donem una prioritat de 1001. Le tenim que donar una prioritat major a 1000 ja que sino ignorara aquesta odre perque hem escogit una versió inferior.</p>
 </body>
 </html>
